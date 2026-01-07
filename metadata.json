@@ -1,0 +1,9 @@
+{
+  "name": "DateHub | Experience-First Dating",
+  "description": "Stop swiping, start experiencing. The first dating platform where the plan comes before the person. Verified activities with fixed budgets.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
