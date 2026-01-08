@@ -6,8 +6,7 @@ import { INITIAL_PROPOSALS } from './constants';
 
 /** --- GEMINI SERVICE --- **/
 // Correct initialization: Always use a named parameter and direct reference to process.env.API_KEY.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 const enhanceWithAI = async (text: string) => {
   try {
     const res = await ai.models.generateContent({
